@@ -1,0 +1,17 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "author": "FDD",
+  "license": "MIT"
+}
