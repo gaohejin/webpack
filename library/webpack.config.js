@@ -1,4 +1,9 @@
 const path = require('path');
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 const config = {
   entry: './src/index.js',
   devtool: 'source-map',
@@ -19,9 +24,22 @@ const config = {
   },
   module: {
     rules: [
-      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+      {
+        test: /(\.jsx|\.js)$/,
+        loaders: [
+          'babel-loader'
+        ],
+        exclude: /(node_modules|bower_components)/,
+        include: [resolve('src'), resolve('test')]
+      }
     ]
   },
+  resolve: {
+    extensions: ['.json', '.js'],
+    alias: {
+      '@': resolve('src')
+    }
+  }
 }
 
 module.exports = config;

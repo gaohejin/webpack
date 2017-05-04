@@ -1,7 +1,12 @@
 import _ from 'lodash';
 import numRef from './ref.json';
+// let proj4 = require('proj4')
+import proj4 from 'proj4'
 
 class NumTransalator {
+  constructor () {
+    console.log(proj4)
+  }
   numtoword (num) {
     return num < 0 || num > 5 ? 'This is a failure' : this.converttoword(num);
   }
