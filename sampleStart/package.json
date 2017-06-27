@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "webpack-stay",
   "version": "1.0.0",
   "description": "example",
   "main": "index.js",
@@ -7,10 +7,15 @@
     "webpack": "webpack"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
     "css-loader": "^0.27.3",
-    "style-loader": "^0.16.0",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.4.2"
+    "extract-text-webpack-plugin": "^2.1.2",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
   },
   "author": "FDD",
   "license": "MIT"

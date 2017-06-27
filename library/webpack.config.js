@@ -29,8 +29,7 @@ const config = {
         loaders: [
           'babel-loader'
         ],
-        exclude: /(node_modules|bower_components)/,
-        include: [resolve('src'), resolve('test')]
+        exclude: /(node_modules|bower_components)/
       }
     ]
   },
